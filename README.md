@@ -8,3 +8,5 @@ This repository contains Python scripts I am developing as part of my cybersecur
 
 ## Featured Files
 - `Cybersecurity_profile.py`: An interactive script that creates and displays a cybersecurity student profile.
+- `ip_address.py`: A script that creates and stores a network in a ditionary.
+- `03_personal-info`: A python script that asks for pieces of information, and then prints statement that combines all the pieces of information into one sentence.
