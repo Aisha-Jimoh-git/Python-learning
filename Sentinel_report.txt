@@ -1,0 +1,13 @@
+===== SENTINEL SECURITY REPORT =====
+
+successful login events: 2
+failed login events: 4
+unknown login events: 2
+
+===== FAILED LOGIN ATTEMPTS BY IP ADDRESS =====
+192.168.1.5: 3 failed attempt(s)
+192.168.1.7: 1 failed attempt(s)
+
+===== SUSPICIOUS ACTIVITY REPORT =====
+ALERT: 192.168.1.5 has 3 failed login attempts. Potential brute force attack detected!
+INFO: 192.168.1.7 has 1 failed login attempt(s). No immediate threat.
