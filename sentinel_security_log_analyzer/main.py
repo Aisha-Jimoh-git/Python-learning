@@ -1,62 +1,20 @@
+import csv
 from pathlib import Path
-security_events = [
-    {
-    "timestamp": "2026-10-12 15:49",
-    "source_ip": "192.168.1.5",
-    "destination": "web-server",
-    "username": "admin",
-    "status": "failed",
-},
-{
-    "timestamp": "2026-10-12 15:50",
-    "source_ip": "192.168.1.5",
-    "destination": "web-server",
-    "username": "admin",
-    "status": "failed",
-},
-{
-    "timestamp": "2026-10-12 15:51",
-    "source_ip": "192.168.1.7",
-    "destination": "web-server",
-    "username": "user2",
-    "status": "failed",
-},
-{
-    "timestamp": "2026-10-12 15:52",
-    "source_ip": "192.168.1.5",
-    "destination": "web-server",
-    "username": "user1",
-    "status": "failed",
-},
-{
-    "timestamp": "2026-10-12 15:52",
-    "source_ip": "192.168.1.8",
-    "destination": "web-server",
-    "username": "user3",
-    "status": "successful",
-},
-{
-    "timestamp": "2026-10-12 15:53",
-    "source_ip": "192.168.1.9",
-    "destination": "web-server",
-    "username": "user4",
-    "status": "successful",
-},
-{
-    "timestamp": "2026-10-12 15:54",
-    "source_ip": "192.168.1.10",
-    "destination": "web-server",
-    "username": "user5",
-    "status": "unknown",
-},
-{
-    "timestamp": "2026-10-12 15:55",
-    "source_ip": "192.168.1.11",
-    "destination": "web-server",
-    "username": "user1",
-    "status": "unknown",
-}
-]
+
+PROJECT_DIR = Path(__file__).resolve().parent
+
+LOG_PATH = PROJECT_DIR / "sample_logs.csv"
+
+with LOG_PATH.open("r", newline="", encoding="utf-8") as log_file:
+    csv_reader = csv.DictReader(log_file)
+    csv_events = list(csv_reader)
+
+print("Number of events loaded:", len(csv_events))
+
+if csv_events:
+    print("First event loaded:", csv_events[0])
+else:
+    print("No events found in the csv file.")
 
 failed_attempts = {}
 
@@ -65,7 +23,7 @@ successful_logins = 0
 failed_logins = 0
 unknown_logins = 0
 
-for event in security_events:
+for event in csv_events:
     print("checking event:", event)
 
     if event["status"] == "failed":
