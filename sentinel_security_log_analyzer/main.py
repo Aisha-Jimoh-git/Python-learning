@@ -66,8 +66,7 @@ for ip, count in failed_attempts.items():
     else:
         print(f"Info: {ip} has {count} failed login attempt(s). No immediate threat.")
 
-
-report_path = Path("__file__").with_name("Sentinel_report.txt")
+report_path = PROJECT_DIR / "Sentinel_report.txt"
 
 with report_path.open("w", encoding="utf-8") as report:
 
