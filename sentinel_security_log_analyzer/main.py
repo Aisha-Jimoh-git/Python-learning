@@ -5,9 +5,14 @@ PROJECT_DIR = Path(__file__).resolve().parent
 
 LOG_PATH = PROJECT_DIR / "sample_logs.csv"
 
-with LOG_PATH.open("r", newline="", encoding="utf-8") as log_file:
-    csv_reader = csv.DictReader(log_file)
-    csv_events = list(csv_reader)
+try:
+    with LOG_PATH.open("r", newline="", encoding="utf-8") as log_file:
+        csv_reader = csv.DictReader(log_file)
+        csv_events = list(csv_reader)
+
+except FileNotFoundError:
+    print(f"ERROR: Could not find the log file: {LOG_PATH}")
+    raise SystemExit(1)
 
 print("Number of events loaded:", len(csv_events))
 
@@ -94,3 +99,4 @@ with report_path.open("w", encoding="utf-8") as report:
                 "No immediate threat.\n"
                 )
 print(f"\nSentinel security report saved to: {report_path}")
+print("Analysis complete.")
