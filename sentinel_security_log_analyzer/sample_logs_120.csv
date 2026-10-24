@@ -1,0 +1,121 @@
+event_id,timestamp,event_type,source_ip,destination,username,service,protocol,destination_port,status,severity,details
+EVT-0001,2026-10-24 09:00:00,authentication,192.168.1.5,web-server-01,admin,nginx,TCP,443,failed,MEDIUM,Login failed for admin account
+EVT-0002,2026-10-24 09:00:30,authentication,192.168.1.5,web-server-01,admin,nginx,TCP,443,failed,MEDIUM,Login failed for admin account
+EVT-0003,2026-10-24 09:01:00,authentication,192.168.1.5,web-server-01,admin,nginx,TCP,443,failed,MEDIUM,Login failed for admin account
+EVT-0004,2026-10-24 09:01:30,authentication,192.168.1.5,web-server-01,admin,nginx,TCP,443,failed,MEDIUM,Login failed for admin account
+EVT-0005,2026-10-24 09:02:00,authentication,192.168.1.5,web-server-01,admin,nginx,TCP,443,successful,INFO,Login successful after repeated failures
+EVT-0006,2026-10-24 09:02:30,authentication,192.168.1.30,linux-server-01,guest,sshd,TCP,22,failed,MEDIUM,SSH authentication failure for guest
+EVT-0007,2026-10-24 09:03:00,authentication,192.168.1.30,linux-server-01,guest,sshd,TCP,22,failed,MEDIUM,SSH authentication failure for guest
+EVT-0008,2026-10-24 09:03:30,authentication,192.168.1.30,linux-server-01,guest,sshd,TCP,22,failed,MEDIUM,SSH authentication failure for guest
+EVT-0009,2026-10-24 09:04:00,authentication,192.168.1.30,linux-server-01,guest,sshd,TCP,22,failed,MEDIUM,SSH authentication failure for guest
+EVT-0010,2026-10-24 09:04:30,authentication,192.168.1.30,linux-server-01,guest,sshd,TCP,22,failed,MEDIUM,SSH authentication failure for guest
+EVT-0011,2026-10-24 09:05:00,authentication,192.168.1.30,linux-server-01,guest,sshd,TCP,22,successful,INFO,SSH login successful after repeated failures
+EVT-0012,2026-10-24 09:05:30,authentication,192.168.1.20,web-server-01,alice,nginx,TCP,443,successful,INFO,Normal authentication event for alice
+EVT-0013,2026-10-24 09:06:00,authentication,192.168.1.22,database-server-01,bob,postgresql,TCP,5432,successful,INFO,Normal authentication event for bob
+EVT-0014,2026-10-24 09:06:30,authentication,192.168.1.23,file-server-01,sara,smb,TCP,445,successful,INFO,Normal authentication event for sara
+EVT-0015,2026-10-24 09:07:00,authentication,192.168.1.24,vpn-gateway-01,maria,vpn,UDP,1194,successful,INFO,Normal authentication event for maria
+EVT-0016,2026-10-24 09:07:30,authentication,192.168.1.25,mail-server-01,dan,smtp,TCP,587,successful,INFO,Normal authentication event for dan
+EVT-0017,2026-10-24 09:08:00,authentication,192.168.1.26,windows-workstation-07,jordan,rdp,TCP,3389,successful,INFO,Normal authentication event for jordan
+EVT-0018,2026-10-24 09:08:30,authentication,192.168.1.27,app-server-01,charlie,nginx,TCP,443,successful,INFO,Normal authentication event for charlie
+EVT-0019,2026-10-24 09:09:00,authentication,192.168.1.28,database-server-01,alice,mysql,TCP,3306,successful,INFO,Normal authentication event for alice
+EVT-0020,2026-10-24 09:09:30,authentication,192.168.1.29,linux-server-02,user2,sshd,TCP,22,successful,INFO,Normal authentication event for user2
+EVT-0021,2026-10-24 09:10:00,authentication,192.168.1.21,web-server-02,sara,nginx,TCP,443,successful,INFO,Normal authentication event for sara
+EVT-0022,2026-10-24 09:10:30,authentication,192.168.1.34,cloud-console,admin2,https,TCP,443,successful,INFO,Normal authentication event for admin2
+EVT-0023,2026-10-24 09:11:00,authentication,192.168.1.36,vpn-gateway-01,charlie,vpn,UDP,1194,successful,INFO,Normal authentication event for charlie
+EVT-0024,2026-10-24 09:11:30,authentication,203.0.113.10,linux-server-01,root,sshd,TCP,22,failed,MEDIUM,SSH authentication failure for root
+EVT-0025,2026-10-24 09:12:00,authentication,203.0.113.11,vpn-gateway-01,employee1,vpn,UDP,1194,failed,MEDIUM,VPN authentication failure
+EVT-0026,2026-10-24 09:12:30,authentication,192.168.1.40,database-server-01,service_account,postgresql,TCP,5432,failed,MEDIUM,Database authentication failure
+EVT-0027,2026-10-24 09:13:00,authentication,192.168.1.41,web-server-02,admin,nginx,TCP,443,failed,MEDIUM,Web application authentication failure
+EVT-0028,2026-10-24 09:13:30,authentication,192.168.1.42,windows-workstation-07,user6,rdp,TCP,3389,failed,MEDIUM,Remote desktop authentication failure
+EVT-0029,2026-10-24 09:14:00,authentication,192.168.1.43,linux-server-02,user6,sshd,TCP,22,failed,MEDIUM,SSH authentication failure
+EVT-0030,2026-10-24 09:14:30,authentication,192.168.1.44,mail-server-01,staff1,smtp,TCP,587,successful,INFO,Mail service authentication succeeded
+EVT-0031,2026-10-24 09:15:00,authentication,192.168.1.45,app-server-01,staff2,nginx,TCP,443,successful,INFO,Application authentication succeeded
+EVT-0032,2026-10-24 09:15:30,authentication,192.168.1.46,database-server-02,analyst,mysql,TCP,3306,successful,INFO,Database authentication succeeded
+EVT-0033,2026-10-24 09:16:00,authentication,192.168.1.47,linux-server-03,operator,sshd,TCP,22,unknown,LOW,Authentication outcome could not be determined
+EVT-0034,2026-10-24 09:16:30,authentication,192.168.1.48,vpn-gateway-01,employee2,vpn,UDP,1194,unknown,LOW,VPN authentication outcome unavailable
+EVT-0035,2026-10-24 09:17:00,authentication,192.168.1.49,web-server-01,guest,nginx,TCP,443,unknown,LOW,Authentication status missing from source log
+EVT-0036,2026-10-24 09:17:30,authentication,192.168.1.55,web-server-02,staff3,nginx,TCP,443,successful,INFO,Web login succeeded
+EVT-0037,2026-10-24 09:18:00,authentication,192.168.1.56,database-server-02,analyst2,postgresql,TCP,5432,successful,INFO,Database login succeeded
+EVT-0038,2026-10-24 09:18:30,authentication,192.168.1.57,linux-server-03,operator2,sshd,TCP,22,successful,INFO,SSH login succeeded
+EVT-0039,2026-10-24 09:19:00,authentication,192.168.1.58,vpn-gateway-01,employee3,vpn,UDP,1194,successful,INFO,VPN login succeeded
+EVT-0040,2026-10-24 09:19:30,authentication,192.168.1.59,windows-workstation-07,employee4,rdp,TCP,3389,successful,INFO,Remote desktop login succeeded
+EVT-0041,2026-10-24 09:20:00,authentication,192.168.1.62,mail-server-01,staff4,smtp,TCP,587,successful,INFO,Mail service login succeeded
+EVT-0042,2026-10-24 09:20:30,authentication,192.168.1.63,database-server-01,reporting_user,mysql,TCP,3306,successful,INFO,Database login succeeded
+EVT-0043,2026-10-24 09:21:00,authentication,192.168.1.64,cloud-console,cloud_admin,https,TCP,443,successful,INFO,Cloud console login succeeded
+EVT-0044,2026-10-24 09:21:30,authentication,203.0.113.40,linux-server-01,root,sshd,TCP,22,failed,MEDIUM,SSH login failed for root
+EVT-0045,2026-10-24 09:22:00,authentication,203.0.113.41,web-server-01,admin,nginx,TCP,443,failed,MEDIUM,Web login failed for admin
+EVT-0046,2026-10-24 09:22:30,authentication,192.168.1.65,database-server-02,service_user,postgresql,TCP,5432,failed,MEDIUM,Database login failed
+EVT-0047,2026-10-24 09:23:00,authentication,192.168.1.66,vpn-gateway-01,employee5,vpn,UDP,1194,failed,MEDIUM,VPN login failed
+EVT-0048,2026-10-24 09:23:30,authentication,192.168.1.67,windows-workstation-07,user7,rdp,TCP,3389,failed,MEDIUM,Remote desktop login failed
+EVT-0049,2026-10-24 09:24:00,authentication,192.168.1.68,mail-server-01,staff5,smtp,TCP,587,failed,MEDIUM,Mail service login failed
+EVT-0050,2026-10-24 09:24:30,authentication,192.168.1.69,linux-server-02,user8,sshd,TCP,22,failed,MEDIUM,SSH login failed
+EVT-0051,2026-10-24 09:25:00,authentication,192.168.1.70,app-server-01,operator3,nginx,TCP,443,failed,MEDIUM,Application login failed
+EVT-0052,2026-10-24 09:25:30,authentication,192.168.1.71,linux-server-03,unknown_user,sshd,TCP,22,unknown,LOW,SSH authentication outcome unavailable
+EVT-0053,2026-10-24 09:26:00,authentication,192.168.1.72,vpn-gateway-01,employee6,vpn,UDP,1194,unknown,LOW,VPN authentication outcome unavailable
+EVT-0054,2026-10-24 09:26:30,authentication,203.0.113.60,linux-server-02,testuser,sshd,TCP,22,failed,MEDIUM,SSH authentication failure in test sequence
+EVT-0055,2026-10-24 09:27:00,authentication,203.0.113.60,linux-server-02,testuser,sshd,TCP,22,failed,MEDIUM,Second SSH authentication failure in test sequence
+EVT-0056,2026-10-24 09:27:30,network_connection,192.168.1.20,web-server-01,,nginx,TCP,443,allowed,INFO,HTTPS connection accepted
+EVT-0057,2026-10-24 09:28:00,network_connection,192.168.1.21,web-server-02,,nginx,TCP,80,allowed,INFO,HTTP connection accepted
+EVT-0058,2026-10-24 09:28:30,network_connection,192.168.1.30,linux-server-01,,sshd,TCP,22,blocked,MEDIUM,SSH connection blocked by network policy
+EVT-0059,2026-10-24 09:29:00,network_connection,203.0.113.20,database-server-01,,postgresql,TCP,5432,blocked,HIGH,External database connection blocked
+EVT-0060,2026-10-24 09:29:30,network_connection,192.168.1.22,database-server-01,,postgresql,TCP,5432,allowed,INFO,Database connection accepted
+EVT-0061,2026-10-24 09:30:00,network_connection,192.168.1.23,file-server-01,,smb,TCP,445,allowed,INFO,File sharing connection accepted
+EVT-0062,2026-10-24 09:30:30,network_connection,203.0.113.21,windows-workstation-07,,rdp,TCP,3389,blocked,MEDIUM,Unapproved remote desktop connection blocked
+EVT-0063,2026-10-24 09:31:00,network_connection,192.168.1.24,vpn-gateway-01,,openvpn,UDP,1194,allowed,INFO,VPN tunnel traffic accepted
+EVT-0064,2026-10-24 09:31:30,network_connection,192.168.1.25,mail-server-01,,smtp,TCP,25,allowed,INFO,SMTP connection accepted
+EVT-0065,2026-10-24 09:32:00,network_connection,192.168.1.26,app-server-01,,https,TCP,443,allowed,INFO,Application HTTPS connection accepted
+EVT-0066,2026-10-24 09:32:30,network_connection,203.0.113.22,database-server-02,,mysql,TCP,3306,blocked,HIGH,Unapproved MySQL connection blocked
+EVT-0067,2026-10-24 09:33:00,network_connection,192.168.1.27,dns-resolver-01,,dns,UDP,53,allowed,INFO,DNS traffic accepted
+EVT-0068,2026-10-24 09:33:30,network_connection,192.168.1.28,monitoring-server-01,,syslog,UDP,514,allowed,INFO,Syslog traffic accepted
+EVT-0069,2026-10-24 09:34:00,network_connection,203.0.113.23,file-server-01,,smb,TCP,445,blocked,HIGH,External SMB connection blocked
+EVT-0070,2026-10-24 09:34:30,network_connection,192.168.1.29,web-server-01,,https,TCP,443,allowed,INFO,HTTPS connection accepted
+EVT-0071,2026-10-24 09:35:00,network_connection,192.168.1.31,app-server-01,,http-alt,TCP,8080,allowed,LOW,Internal application port accessed
+EVT-0072,2026-10-24 09:35:30,network_connection,203.0.113.24,linux-server-02,,sshd,TCP,22,blocked,MEDIUM,Unapproved SSH connection blocked
+EVT-0073,2026-10-24 09:36:00,network_connection,192.168.1.32,database-server-02,,postgresql,TCP,5432,allowed,INFO,PostgreSQL connection accepted
+EVT-0074,2026-10-24 09:36:30,network_connection,192.168.1.33,mail-server-01,,submission,TCP,587,allowed,INFO,Mail submission connection accepted
+EVT-0075,2026-10-24 09:37:00,network_connection,203.0.113.25,cloud-console,,https,TCP,8443,blocked,MEDIUM,Unapproved cloud management connection blocked
+EVT-0076,2026-10-24 09:37:30,firewall,192.168.1.5,firewall-01,,firewall,TCP,443,allowed,INFO,HTTPS rule matched
+EVT-0077,2026-10-24 09:38:00,firewall,203.0.113.30,firewall-01,,firewall,TCP,22,blocked,MEDIUM,Inbound SSH denied by firewall
+EVT-0078,2026-10-24 09:38:30,firewall,203.0.113.31,firewall-01,,firewall,TCP,3389,blocked,HIGH,Inbound RDP denied by firewall
+EVT-0079,2026-10-24 09:39:00,firewall,192.168.1.20,firewall-01,,firewall,UDP,53,allowed,INFO,DNS rule matched
+EVT-0080,2026-10-24 09:39:30,firewall,203.0.113.32,firewall-01,,firewall,TCP,445,blocked,HIGH,Inbound SMB denied by firewall
+EVT-0081,2026-10-24 09:40:00,firewall,192.168.1.22,firewall-01,,firewall,TCP,5432,allowed,INFO,Database subnet rule matched
+EVT-0082,2026-10-24 09:40:30,firewall,192.168.1.23,firewall-01,,firewall,TCP,445,allowed,INFO,Internal file sharing permitted
+EVT-0083,2026-10-24 09:41:00,firewall,203.0.113.33,firewall-01,,firewall,TCP,3306,blocked,HIGH,Inbound MySQL denied by firewall
+EVT-0084,2026-10-24 09:41:30,firewall,192.168.1.24,firewall-01,,firewall,UDP,1194,allowed,INFO,VPN traffic permitted
+EVT-0085,2026-10-24 09:42:00,firewall,203.0.113.34,firewall-01,,firewall,TCP,23,blocked,HIGH,Telnet traffic denied by firewall
+EVT-0086,2026-10-24 09:42:30,firewall,192.168.1.25,firewall-01,,firewall,TCP,587,allowed,INFO,Mail submission permitted
+EVT-0087,2026-10-24 09:43:00,firewall,192.168.1.26,firewall-01,,firewall,TCP,443,allowed,INFO,HTTPS rule matched
+EVT-0088,2026-10-24 09:43:30,firewall,203.0.113.35,firewall-01,,firewall,TCP,21,blocked,MEDIUM,FTP traffic denied by firewall
+EVT-0089,2026-10-24 09:44:00,firewall,192.168.1.27,firewall-01,,firewall,UDP,514,allowed,INFO,Logging traffic permitted
+EVT-0090,2026-10-24 09:44:30,firewall,203.0.113.36,firewall-01,,firewall,TCP,8443,blocked,MEDIUM,Unapproved management port denied
+EVT-0091,2026-10-24 09:45:00,dns_query,192.168.1.20,dns-resolver-01,,dns,UDP,53,resolved,INFO,Internal hostname resolved
+EVT-0092,2026-10-24 09:45:30,dns_query,192.168.1.21,dns-resolver-01,,dns,UDP,53,resolved,INFO,External domain resolved
+EVT-0093,2026-10-24 09:46:00,dns_query,192.168.1.22,dns-resolver-01,,dns,UDP,53,resolved,INFO,Internal hostname resolved
+EVT-0094,2026-10-24 09:46:30,dns_query,192.168.1.30,dns-resolver-01,,dns,UDP,53,suspicious,MEDIUM,Unusually long domain query flagged for review
+EVT-0095,2026-10-24 09:47:00,dns_query,192.168.1.31,dns-resolver-01,,dns,UDP,53,resolved,INFO,External domain resolved
+EVT-0096,2026-10-24 09:47:30,dns_query,192.168.1.32,dns-resolver-01,,dns,UDP,53,blocked,LOW,Policy-blocked domain query
+EVT-0097,2026-10-24 09:48:00,dns_query,192.168.1.33,dns-resolver-01,,dns,UDP,53,resolved,INFO,Internal hostname resolved
+EVT-0098,2026-10-24 09:48:30,dns_query,192.168.1.34,dns-resolver-01,,dns,UDP,53,resolved,INFO,External domain resolved
+EVT-0099,2026-10-24 09:49:00,dns_query,192.168.1.35,dns-resolver-01,,dns,UDP,53,suspicious,MEDIUM,Repeated query pattern flagged for review
+EVT-0100,2026-10-24 09:49:30,dns_query,192.168.1.36,dns-resolver-01,,dns,UDP,53,resolved,INFO,Internal hostname resolved
+EVT-0101,2026-10-24 09:50:00,dns_query,192.168.1.37,dns-resolver-01,,dns,UDP,53,blocked,LOW,Policy-blocked domain query
+EVT-0102,2026-10-24 09:50:30,dns_query,192.168.1.38,dns-resolver-01,,dns,UDP,53,resolved,INFO,External domain resolved
+EVT-0103,2026-10-24 09:51:00,dns_query,192.168.1.39,dns-resolver-01,,dns,UDP,53,resolved,INFO,Internal hostname resolved
+EVT-0104,2026-10-24 09:51:30,dns_query,192.168.1.40,dns-resolver-01,,dns,UDP,53,suspicious,MEDIUM,Rare domain query flagged for review
+EVT-0105,2026-10-24 09:52:00,dns_query,192.168.1.41,dns-resolver-01,,dns,UDP,53,resolved,INFO,External domain resolved
+EVT-0106,2026-10-24 09:52:30,file_access,192.168.1.20,file-server-01,alice,smb,TCP,445,allowed,INFO,User accessed shared project folder
+EVT-0107,2026-10-24 09:53:00,file_access,192.168.1.23,file-server-01,sara,smb,TCP,445,allowed,INFO,User read shared document
+EVT-0108,2026-10-24 09:53:30,file_access,192.168.1.30,file-server-01,guest,smb,TCP,445,denied,MEDIUM,Access denied to restricted folder
+EVT-0109,2026-10-24 09:54:00,file_access,192.168.1.22,file-server-01,bob,smb,TCP,445,allowed,INFO,User accessed team folder
+EVT-0110,2026-10-24 09:54:30,file_access,192.168.1.31,file-server-01,user3,smb,TCP,445,denied,MEDIUM,Write request denied by permissions
+EVT-0111,2026-10-24 09:55:00,file_access,192.168.1.24,file-server-01,maria,smb,TCP,445,allowed,INFO,User accessed shared resource
+EVT-0112,2026-10-24 09:55:30,file_access,192.168.1.32,file-server-01,user4,smb,TCP,445,denied,LOW,Permission check denied file read
+EVT-0113,2026-10-24 09:56:00,file_access,192.168.1.25,file-server-01,dan,smb,TCP,445,allowed,INFO,User accessed department folder
+EVT-0114,2026-10-24 09:56:30,file_access,192.168.1.33,file-server-01,charlie,smb,TCP,445,allowed,INFO,User read shared document
+EVT-0115,2026-10-24 09:57:00,file_access,192.168.1.34,file-server-01,admin2,smb,TCP,445,denied,MEDIUM,Access denied to restricted folder
+EVT-0116,2026-10-24 09:57:30,process_event,192.168.1.50,linux-server-01,root,process-monitor,LOCAL,,started,INFO,sshd service started
+EVT-0117,2026-10-24 09:58:00,process_event,192.168.1.51,linux-server-02,root,process-monitor,LOCAL,,started,INFO,system update process started
+EVT-0118,2026-10-24 09:58:30,process_event,192.168.1.52,windows-workstation-07,user6,process-monitor,LOCAL,,blocked,MEDIUM,Unapproved script execution blocked
+EVT-0119,2026-10-24 09:59:00,process_event,192.168.1.53,app-server-01,service_account,process-monitor,LOCAL,,started,INFO,Application worker process started
+EVT-0120,2026-10-24 09:59:30,process_event,192.168.1.54,linux-server-03,root,process-monitor,LOCAL,,blocked,HIGH,Execution of unsigned binary blocked
