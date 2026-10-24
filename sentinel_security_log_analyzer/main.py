@@ -31,6 +31,13 @@ unknown_logins = 0
 for event in csv_events:
     print("checking event:", event)
 
+    event_type = event.get("event_type", "authentication")
+
+    if event_type != "authentication":
+        print(f"Non-authentication event detected: {event_type}")
+        print("Skipping this event for now.")
+        continue
+
     if event["status"] == "failed":
         failed_logins += 1
         ip_address = event["source_ip"]
