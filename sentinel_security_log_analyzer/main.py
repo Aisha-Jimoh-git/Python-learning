@@ -3,7 +3,7 @@ from pathlib import Path
 
 PROJECT_DIR = Path(__file__).resolve().parent
 
-LOG_PATH = PROJECT_DIR / "sample_logs.csv"
+LOG_PATH = PROJECT_DIR / "sample_logs_120.csv"
 
 try:
     with LOG_PATH.open("r", newline="", encoding="utf-8") as log_file:
