@@ -1,31 +1,43 @@
 ===== SENTINEL SECURITY REPORT =====
 
-successful login events: 18
-failed login events: 19
-unknown login events: 3
+successful login events: 25
+failed login events: 25
+unknown login events: 5
 
 ===== FAILED LOGIN ATTEMPTS BY IP ADDRESS =====
 192.168.1.5: 4 failed attempt(s)
-192.168.1.7: 1 failed attempt(s)
 192.168.1.30: 5 failed attempt(s)
-192.168.1.25: 1 failed attempt(s)
-192.168.1.26: 1 failed attempt(s)
-192.168.1.31: 1 failed attempt(s)
-192.168.1.32: 1 failed attempt(s)
-192.168.1.35: 2 failed attempt(s)
-192.168.1.39: 1 failed attempt(s)
+203.0.113.10: 1 failed attempt(s)
+203.0.113.11: 1 failed attempt(s)
+192.168.1.40: 1 failed attempt(s)
 192.168.1.41: 1 failed attempt(s)
+192.168.1.42: 1 failed attempt(s)
 192.168.1.43: 1 failed attempt(s)
+203.0.113.40: 1 failed attempt(s)
+203.0.113.41: 1 failed attempt(s)
+192.168.1.65: 1 failed attempt(s)
+192.168.1.66: 1 failed attempt(s)
+192.168.1.67: 1 failed attempt(s)
+192.168.1.68: 1 failed attempt(s)
+192.168.1.69: 1 failed attempt(s)
+192.168.1.70: 1 failed attempt(s)
+203.0.113.60: 2 failed attempt(s)
 
 ===== SUSPICIOUS ACTIVITY REPORT =====
 ALERT: 192.168.1.5 has 4 failed login attempts. Potential brute force attack detected!
-INFO: 192.168.1.7 has 1 failed login attempt(s). No immediate threat.
 ALERT: 192.168.1.30 has 5 failed login attempts. Potential brute force attack detected!
-INFO: 192.168.1.25 has 1 failed login attempt(s). No immediate threat.
-INFO: 192.168.1.26 has 1 failed login attempt(s). No immediate threat.
-INFO: 192.168.1.31 has 1 failed login attempt(s). No immediate threat.
-INFO: 192.168.1.32 has 1 failed login attempt(s). No immediate threat.
-INFO: 192.168.1.35 has 2 failed login attempt(s). No immediate threat.
-INFO: 192.168.1.39 has 1 failed login attempt(s). No immediate threat.
+INFO: 203.0.113.10 has 1 failed login attempt(s). No immediate threat.
+INFO: 203.0.113.11 has 1 failed login attempt(s). No immediate threat.
+INFO: 192.168.1.40 has 1 failed login attempt(s). No immediate threat.
 INFO: 192.168.1.41 has 1 failed login attempt(s). No immediate threat.
+INFO: 192.168.1.42 has 1 failed login attempt(s). No immediate threat.
 INFO: 192.168.1.43 has 1 failed login attempt(s). No immediate threat.
+INFO: 203.0.113.40 has 1 failed login attempt(s). No immediate threat.
+INFO: 203.0.113.41 has 1 failed login attempt(s). No immediate threat.
+INFO: 192.168.1.65 has 1 failed login attempt(s). No immediate threat.
+INFO: 192.168.1.66 has 1 failed login attempt(s). No immediate threat.
+INFO: 192.168.1.67 has 1 failed login attempt(s). No immediate threat.
+INFO: 192.168.1.68 has 1 failed login attempt(s). No immediate threat.
+INFO: 192.168.1.69 has 1 failed login attempt(s). No immediate threat.
+INFO: 192.168.1.70 has 1 failed login attempt(s). No immediate threat.
+INFO: 203.0.113.60 has 2 failed login attempt(s). No immediate threat.
