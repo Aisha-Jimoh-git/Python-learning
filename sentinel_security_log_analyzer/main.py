@@ -22,6 +22,7 @@ else:
     print("No events found in the csv file.")
 
 failed_attempts = {}
+ssh_failed_attempts = {}
 
 # counters for login event statistics
 successful_logins = 0
@@ -42,6 +43,17 @@ for event in csv_events:
         failed_logins += 1
         ip_address = event["source_ip"]
 
+        if (
+            event.get("service", "").lower() == "ssh"
+            and event.get ("destination_port") == "22"
+        ):
+            ssh_key = ip_address + " -> " + event["destination"]
+
+            if ssh_key not in ssh_failed_attempts:
+                ssh_failed_attempts[ssh_key] = 1
+            else:
+                ssh_failed_attempts[ssh_key] += 1
+
         if ip_address not in failed_attempts:
             failed_attempts[ip_address] = 1
         else:
@@ -58,6 +70,28 @@ for event in csv_events:
     else:
         unknown_logins += 1
         print("Warning: Unrecognized login attempt.")
+
+#set threshold for SSH failed login attempts
+ssh_threshold = 3
+
+print("\n===== SSH AUTHENTICATION DETECTION =====")
+
+if not ssh_failed_attempts:
+    print("No failed SSH authentication attempts detected.")
+else:
+    for ssh_target, count in ssh_failed_attempts.items():
+
+        if count >= ssh_threshold:
+            print("ALERT: Repeated failed SSH login attempts detected!")
+            print("Source and destination:", ssh_target)
+            print("Failed SSH attempts:", count)
+            print("Priority: HIGH")
+            print("Reason: SSH authentication failure threshold reached.")
+        else:
+            print(
+                f"INFO: {ssh_target} has "
+                f"{count} failed SSH authentication attempt(s)."
+                )
 
 print("\n===== LOGIN EVENT SUMMARY =====")
 print(f"successful login events: {successful_logins}")
